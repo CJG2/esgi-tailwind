@@ -27,3 +27,10 @@ Pendant le développement, `npm run dev` recompile automatiquement à chaque mod
 Prédiction : en remplaçant `bg-blue-700` par `bg-accent` avec `--color-accent: #1d4ed8`, le lien ne devait pas changer d'apparence.
 
 Résultat : à l'œil, presque aucune différence, mais pas exactement la même couleur. Dans Tailwind v4, `blue-700` vaut `oklch(48.8% 0.243 264.376)`, un bleu un peu plus vif. `#1d4ed8` était la valeur de `blue-700` dans Tailwind v3. L'autre différence est que la couleur porte maintenant un nom qui a du sens (`accent`) et se modifie à un seul endroit.
+
+---
+
+SHA commits
+
+TP1: f318a82bd475cc499e648d20f67244604ea3f293
+TP2: 

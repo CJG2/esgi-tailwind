@@ -30,7 +30,36 @@ Résultat : à l'œil, presque aucune différence, mais pas exactement la même 
 
 ---
 
+# TP2 — Page d'album (`mission.html`)
+
+Page de l'album *Heroes and Villains* de Metro Boomin. Compiler avec `npm ci` puis `npm run build`, et ouvrir `mission.html`.
+
+## Mini-DA
+
+- **Intention** : une page sombre comme la pochette, où seul l'orange de la flamme attire l'œil vers l'action principale (Play).
+- **Palette** : fond noir `neutral-950`, texte blanc, texte secondaire gris `neutral-400`, accent orange flamme `#f97316` défini dans `@theme` (`--color-flame`).
+- **Hiérarchie** : album (`text-4xl font-bold`), artiste (`text-xl`, orange), année et artistes invités (gris, plus petits).
+- **Rythme d'espacement** : `mt-2` dans un groupe, `mt-6` entre les éléments, `mt-8` / `gap-12` entre les deux grands blocs.
+
+Le détail est dans `public/direction-artistique.md`.
+
+## Trois choix expliqués
+
+| Choix | Classe | Effet |
+| --- | --- | --- |
+| Hiérarchie du titre | `text-4xl font-bold` sur le `<h1>` | Le nom de l'album est le texte le plus grand et le plus gras de la page : on le lit en premier. L'artiste vient juste après en `text-xl`, en orange. |
+| Rythme des espacements | `mt-6` | Même écart entre chaque élément de la colonne de gauche (infos, description, bouton, lien) et entre les boutons et la liste : la page respire de façon régulière. `mt-2` resserre ce qui va ensemble (album, artiste, année). |
+| Couleur de l'action | `bg-flame` sur Play | Play est le seul bouton plein, en orange : c'est l'action principale. Shuffle et Add to Library n'ont qu'une bordure grise (`border-neutral-600`). |
+
+
+## Captures
+
+- Mobile (390 px) : `public/assets/tp2-mobile-capture.png` `public/assets/tp2-mobile2-capture.png`
+- Grand écran (1280 px) : `public/assets/tp2-pc-capture.png`
+
+---
+
 SHA commits
 
 TP1: f318a82bd475cc499e648d20f67244604ea3f293
-TP2: d680c7934ed503c7e1ebcd15c2bc2fc61bec2f09
+TP2: 

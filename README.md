@@ -33,4 +33,4 @@ Résultat : à l'œil, presque aucune différence, mais pas exactement la même 
 SHA commits
 
 TP1: f318a82bd475cc499e648d20f67244604ea3f293
-TP2: 
+TP2: d680c7934ed503c7e1ebcd15c2bc2fc61bec2f09

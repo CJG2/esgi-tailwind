@@ -54,12 +54,44 @@ Le détail est dans `public/direction-artistique.md`.
 
 ## Captures
 
-- Mobile (390 px) : `public/assets/tp2-mobile-capture.png` `public/assets/tp2-mobile2-capture.png`
-- Grand écran (1280 px) : `public/assets/tp2-pc-capture.png`
+- Mobile (390 px) : `public/screens/tp2-mobile-capture.png` `public/screens/tp2-mobile2-capture.png`
+- Grand écran (1280 px) : `public/screens/tp2-pc-capture.png`
+
+---
+
+# TP3 — Galerie responsive (`tp.html`)
+
+## Lancer et compiler
+
+```bash
+npm ci
+npm run build   # ou npm run dev pour recompiler à chaque modification
+```
+
+Puis ouvrir `tp.html` dans le navigateur.
+
+## Flexbox et Grid
+
+La bannière utilise **Flexbox** (`flex flex-col md:flex-row md:justify-between`) parce qu'elle aligne seulement deux éléments sur une ligne : le texte et le bouton, empilés sur mobile puis côte à côte à partir de 768 px.
+La galerie utilise **Grid** (`grid md:grid-cols-2 lg:grid-cols-3`) parce qu'elle range six cartes en lignes et en colonnes de même largeur : 1 colonne sur mobile, 2 à 768 px, 3 à 1280 px.
+
+## Deux choix de direction artistique
+
+| Choix | Classes | Effet |
+| --- | --- | --- |
+| Un seul bouton coloré | `bg-accent text-white hover:bg-blue-800` sur « Voir les projets » | C'est le seul élément en couleur sur une page blanche et grise : l'action principale se repère tout de suite. |
+| Même fond pour tous les blocs | `rounded-xl bg-slate-100` sur la bannière et les 6 cartes | La bannière et les cartes ont le même traitement : la page est cohérente et les cartes sont toutes au même niveau. |
+
+## Captures
+
+- Grand écran (1280 px) : `public/screens/tp3-capture1.png`
+- Ecran "normal": `public/screens/tp3-capture2.png`
+- Mobile (390 px) : `public/screens/tp3-capture3.png`
 
 ---
 
 SHA commits
 
-TP1: f318a82bd475cc499e648d20f67244604ea3f293
-TP2: 5010c33bbce31655b6e782d07f9cc6b8659a270c
+TP1: f318a82bd475cc499e648d20f67244604ea3f293 (main)
+TP2: 5010c33bbce31655b6e782d07f9cc6b8659a270c (main)
+TP3: 

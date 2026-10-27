@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galerie — TP Tailwind</title>
+    <link rel="stylesheet" href="./dist/output.css">
+</head>
+<body>
+    <header class="flex items-center justify-between bg-slate-100 p-4">
+        <p class="text-xl font-bold">Galerie</p>
+        <nav aria-label="Navigation principale">
+            <a href="#projets">Les projets</a>
+        </nav>
+    </header>
+    <main class="mx-auto max-w-7xl p-4">
+        <section aria-labelledby="titre-page" class="flex flex-col gap-4 rounded-xl bg-slate-100 p-6 md:flex-row md:items-center md:justify-between">
+            <div>
+                <h1 id="titre-page" class="text-3xl font-bold">Une galerie, plusieurs écrans</h1>
+                <p class="mt-2 text-slate-600">Six projets à découvrir dans une interface adaptée à votre écran.</p>
+            </div>
+            <a href="#projets" class="rounded-lg bg-accent px-4 py-2 text-center font-semibold text-white hover:bg-blue-800">Voir les projets</a>
+        </section>
+        <section id="projets" aria-labelledby="titre-projets" class="mt-8">
+            <h2 id="titre-projets" class="text-2xl font-bold">Les projets</h2>
+            <div class="mt-4 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+                <article class="rounded-xl bg-slate-100 p-4">
+                    <img src="./assets/projet-01.svg" alt="" width="640" height="400" class="w-full rounded-lg">
+                    <div class="mt-4">
+                        <h3 class="text-lg font-semibold">Projet 01</h3>
+                        <p class="mt-1 text-slate-600">Une première proposition de mise en page.</p>
+                    </div>
+                </article>
+                <article class="rounded-xl bg-slate-100 p-4">
+                    <img src="./assets/projet-02.svg" alt="" width="640" height="400" class="w-full rounded-lg">
+                    <div class="mt-4">
+                        <h3 class="text-lg font-semibold">Projet 02</h3>
+                        <p class="mt-1 text-slate-600">Un autre équilibre entre texte et espace.</p>
+                    </div>
+                </article>
+                <article class="rounded-xl bg-slate-100 p-4">
+                    <img src="./assets/projet-03.svg" alt="" width="640" height="400" class="w-full rounded-lg">
+                    <div class="mt-4">
+                        <h3 class="text-lg font-semibold">Projet 03</h3>
+                        <p class="mt-1 text-slate-600">Une composition qui met le contenu en valeur.</p>
+                    </div>
+                </article>
+                <article class="rounded-xl bg-slate-100 p-4">
+                    <img src="./assets/projet-04.svg" alt="" width="640" height="400" class="w-full rounded-lg">
+                    <div class="mt-4">
+                        <h3 class="text-lg font-semibold">Projet 04</h3>
+                        <p class="mt-1 text-slate-600">Des blocs qui gardent une hiérarchie lisible.</p>
+                    </div>
+                </article>
+                <article class="rounded-xl bg-slate-100 p-4">
+                    <img src="./assets/projet-05.svg" alt="" width="640" height="400" class="w-full rounded-lg">
+                    <div class="mt-4">
+                        <h3 class="text-lg font-semibold">Projet 05</h3>
+                        <p class="mt-1 text-slate-600">Une organisation pensée pour plusieurs écrans.</p>
+                    </div>
+                </article>
+                <article class="rounded-xl bg-slate-100 p-4">
+                    <img src="./assets/projet-06.svg" alt="" width="640" height="400" class="w-full rounded-lg">
+                    <div class="mt-4">
+                        <h3 class="text-lg font-semibold">Projet 06</h3>
+                        <p class="mt-1 text-slate-600">Un dernier exemple pour compléter la galerie.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

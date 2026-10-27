@@ -62,4 +62,4 @@ Le détail est dans `public/direction-artistique.md`.
 SHA commits
 
 TP1: f318a82bd475cc499e648d20f67244604ea3f293
-TP2: 
+TP2: 5010c33bbce31655b6e782d07f9cc6b8659a270c

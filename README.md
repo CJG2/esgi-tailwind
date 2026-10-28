@@ -92,10 +92,10 @@ La galerie utilise **Grid** (`grid md:grid-cols-2 lg:grid-cols-3`) parce qu'elle
 
 SHA commits
 
-TP1: f318a82bd475cc499e648d20f67244604ea3f293 (main)
-TP2: 5010c33bbce31655b6e782d07f9cc6b8659a270c (main)
-TP3: f54e71c7db6ef8c494e3c80b887d7cb2af65310f (main)
-TP4: b5815604450cb2be160eba577ab168478d26b6da
+TP1: f318a82bd475cc499e648d20f67244604ea3f293 (main) (https://github.com/CJG2/esgi-tailwind/tree/feat/main)
+TP2: 5010c33bbce31655b6e782d07f9cc6b8659a270c (main) (https://github.com/CJG2/esgi-tailwind/tree/feat/tp2)
+TP3: f54e71c7db6ef8c494e3c80b887d7cb2af65310f (main) (https://github.com/CJG2/esgi-tailwind/tree/feat/tp3)
+TP4: b5815604450cb2be160eba577ab168478d26b6da 
 
 ---
 

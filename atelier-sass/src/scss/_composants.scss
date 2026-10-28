@@ -1,0 +1,26 @@
+@use "tokens";
+
+@function espace($steps) {
+    @return tokens.$unit * $steps;
+}
+
+@mixin panneau($color) {
+    padding: espace(8);
+    border-left: 4px solid $color;
+    border-radius: espace(4);
+}
+
+.fiche {
+    @include panneau(tokens.$accent);
+    background: #eff6ff;
+}
+
+.fiche h1 {
+    color: tokens.$accent;
+}
+
+.note {
+    @include panneau(tokens.$accent);
+    margin-top: espace(6);
+    background: #fff1f2;
+}

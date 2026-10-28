@@ -1,0 +1,12 @@
+{
+    "name": "atelier-sass-4iw",
+    "version": "1.0.0",
+    "private": true,
+    "scripts": {
+        "dev": "sass --watch src/scss/app.scss:dist/sass.css --no-source-map",
+        "build": "sass src/scss/app.scss dist/sass.css --no-source-map"
+    },
+    "devDependencies": {
+        "sass": "1.93.2"
+    }
+}

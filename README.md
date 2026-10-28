@@ -84,8 +84,6 @@ Chaque bouton du programme a `aria-controls="programme-1"` (2, 3), qui correspon
 
 ## 5. Les vérifications et les limites
 
-> Colonne « Observé » : à remplir après avoir fait chaque test soi-même.
-
 | Test | Attendu | Observé |
 | --- | --- | --- |
 | 390 px | une colonne, navigation centrée sur deux lignes, aucun défilement horizontal, footer empilé | Testé & validé |

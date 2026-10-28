@@ -3,18 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ma première fiche Tailwind</title>
+    <title>CC1</title>
     <link rel="stylesheet" href="./dist/output.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
-<body class="bg-slate-100 p-6 text-slate-900">
-    <main class="mx-auto max-w-md rounded-xl bg-white p-10 shadow-md">
-        <h1 class="text-2xl font-bold">Ma première fiche Tailwind</h1>
-        <p class="mt-3 text-slate-600">Je compose une interface avec des classes utilitaires.</p>
-        <a href="#details" class="mt-6 inline-block rounded-lg bg-accent px-4 py-2 font-semibold text-white">Comprendre le résultat</a>
-        <section id="details">
-            <h2 class="mt-8 text-xl font-semibold">Ce que j'ai appris</h2>
-            <p class="mt-2 text-slate-600">Le HTML contient les classes ; Tailwind génère le CSS.</p>
+<body class="bg-fond p-0 m-0">
+    <nav class="sticky top-0 z-10 bg-primary text-white p-4 flex flex-col items-center gap-4 md:flex-row md:justify-between">
+        <h1 class="text-2xl font-bold"><i class="bi bi-code-slash" aria-hidden="true"></i> DevMeet</h1>
+        <ul class="flex gap-2 md:gap-4">
+            <li><a href="#presentation" class="px-2 py-2 rounded-xl underline decoration-transparent underline-offset-4 transition-colors duration-300 hover:bg-secondary hover:decoration-white focus-visible:bg-secondary md:px-4">Présentation</a></li>
+            <li><a href="#programme" class="px-2 py-2 rounded-xl underline decoration-transparent underline-offset-4 transition-colors duration-300 hover:bg-secondary hover:decoration-white focus-visible:bg-secondary md:px-4">Programme</a></li>
+            <li><a href="#infos-pratiques" class="px-2 py-2 rounded-xl underline decoration-transparent underline-offset-4 transition-colors duration-300 hover:bg-secondary hover:decoration-white focus-visible:bg-secondary md:px-4">Infos pratiques</a></li>
+        </ul>
+    </nav>
+    <main class="px-4 py-8">
+        <section 
+            id="presentation"
+            class="max-w-5xl mx-auto scroll-mt-32 md:scroll-mt-20"
+        >
+            <h2 class="text-xl font-bold text-primary">Une soirée pour les développeurs !</h2>
+            <p>Trois conférences courtes pour découvrir des pratiques concrètes, échanger et repartir avec de nouvelles idées pour vos projets web. </p>
+            <ul class="flex gap-2 my-4">
+                <li class="flex justify-center items-center gap-1 text-sm rounded-2xl py-0.5 px-2 border border-secondary bg-primary/10 text-center text-secondary md:flex-none"><i class="bi bi-calendar-event" aria-hidden="true"></i> 12 novembre 2026</li>
+                <li class="flex justify-center items-center gap-1 text-sm rounded-2xl py-0.5 px-2 border border-secondary bg-primary/10 text-center text-secondary md:flex-none"><i class="bi bi-geo-alt" aria-hidden="true"></i> Lyon</li>
+                <li class="flex justify-center items-center gap-1 text-sm rounded-2xl py-0.5 px-2 border border-secondary bg-primary/10 text-center text-secondary md:flex-none"><i class="bi bi-cup-straw" aria-hidden="true"></i> Premier verre gratuit !</li>
+            </ul>
+            <a href="#programme" class="flex justify-center items-center gap-2 px-4 py-2 rounded-xl bg-primary text-center text-white hover:bg-secondary md:inline-block">Voir le programme <i class="bi bi-arrow-down" aria-hidden="true"></i></a>
+        </section>
+        <section id="programme" class="max-w-5xl mx-auto mt-12 scroll-mt-32 md:scroll-mt-20">
+            <h2 class="text-xl font-bold text-primary"><i class="bi bi-calendar3" aria-hidden="true"></i> Programme de la soirée</h2>
+            <p>Voici le programme détaillé de la soirée, cliquez sur les conférences pour en savoir plus !</p>
+            <div class="flex flex-col gap-4 my-4">
+                <article class="rounded-xl border border-secondary bg-white">
+                    <h3>
+                        <button type="button" class="programme-toggle flex w-full items-center gap-4 rounded-xl p-4 text-left hover:bg-primary/10" aria-expanded="false" aria-controls="programme-1">
+                            <span class="rounded-2xl py-0.5 px-2 bg-primary text-white font-semibold whitespace-nowrap"><i class="bi bi-clock" aria-hidden="true"></i> 18 h 45</span>
+                            <span class="flex-1">
+                                <span class="block font-bold text-secondary">Des interfaces qui restent lisibles</span>
+                                <span class="block text-sm"><i class="bi bi-person" aria-hidden="true"></i> Camille Martin · Développeuse front-end</span>
+                            </span>
+                            <i class="bi bi-chevron-down text-primary" aria-hidden="true"></i>
+                        </button>
+                    </h3>
+                    <div id="programme-1" class="hidden px-4 pb-4">
+                        <p>Hiérarchie, contrastes et espacements : des choix simples qui améliorent une interface.</p>
+                    </div>
+                </article>
+
+                <article class="rounded-xl border border-secondary bg-white">
+                    <h3>
+                        <button type="button" class="programme-toggle flex w-full items-center gap-4 rounded-xl p-4 text-left hover:bg-primary/10" aria-expanded="false" aria-controls="programme-2">
+                            <span class="rounded-2xl py-0.5 px-2 bg-primary text-white font-semibold whitespace-nowrap"><i class="bi bi-clock" aria-hidden="true"></i> 19 h 15</span>
+                            <span class="flex-1">
+                                <span class="block font-bold text-secondary">Un CSS plus facile à maintenir</span>
+                                <span class="block text-sm"><i class="bi bi-person" aria-hidden="true"></i> Alex Moreau · Intégrateur web</span>
+                            </span>
+                            <i class="bi bi-chevron-down text-primary" aria-hidden="true"></i>
+                        </button>
+                    </h3>
+                    <div id="programme-2" class="hidden px-4 pb-4">
+                        <p>Organiser ses styles et ses composants pour faire évoluer un projet sans tout reprendre.</p>
+                    </div>
+                </article>
+
+                <article class="rounded-xl border border-secondary bg-white">
+                    <h3>
+                        <button type="button" class="programme-toggle flex w-full items-center gap-4 rounded-xl p-4 text-left hover:bg-primary/10" aria-expanded="false" aria-controls="programme-3">
+                            <span class="rounded-2xl py-0.5 px-2 bg-primary text-white font-semibold whitespace-nowrap"><i class="bi bi-clock" aria-hidden="true"></i> 19 h 45</span>
+                            <span class="flex-1">
+                                <span class="block font-bold text-secondary">Du code au site en ligne</span>
+                                <span class="block text-sm"><i class="bi bi-person" aria-hidden="true"></i> Sam Benali · Développeur web</span>
+                            </span>
+                            <i class="bi bi-chevron-down text-primary" aria-hidden="true"></i>
+                        </button>
+                    </h3>
+                    <div id="programme-3" class="hidden px-4 pb-4">
+                        <p>Comprendre les vérifications utiles avant de livrer une petite application web.</p>
+                    </div>
+                </article>
+            </div>
         </section>
     </main>
+    <footer id="infos-pratiques" class="scroll-mt-32 md:scroll-mt-20 border-t border-secondary px-4 py-8 bg-[#1C1C1C]">
+        <h2 class="max-w-5xl mx-auto text-xl font-bold text-primary"><i class="bi bi-code-slash mr-1" aria-hidden="true"></i>DevMeet</h2>
+        <div class="max-w-5xl mx-auto mt-4 grid gap-6 md:grid-cols-2">
+            <div>
+                <h3 class="font-bold text-secondary"><i class="bi bi-geo-alt" aria-hidden="true"></i> Lieu</h3>
+                <p class="text-fond">Le Hub, Lyon</p>
+            </div>
+            <div>
+                <h3 class="font-bold text-secondary"><i class="bi bi-clock" aria-hidden="true"></i> Horaires</h3>
+                <p class="text-fond">18 h 30 à 21 h</p>
+            </div>
+            <div>
+                <h3 class="font-bold text-secondary"><i class="bi bi-ticket-perforated" aria-hidden="true"></i> Tarif</h3>
+                <p class="text-fond">Entrée gratuite, dans la limite des places disponibles</p>
+            </div>
+            <div>
+                <h3 class="font-bold text-secondary"><i class="bi bi-envelope" aria-hidden="true"></i> Contact</h3>
+                <a href="mailto:bonjour@devmeet.example" class="text-primary underline hover:text-secondary">bonjour@devmeet.example</a>
+            </div>
+            
+        </div>
+    </footer>
+    <script src="./programme.js" defer></script>
 </body>
 </html>
